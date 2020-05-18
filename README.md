@@ -9,17 +9,17 @@ Challenge File:
 
 # Key Takeaways
 
-A.	The datasets needed further cleansing specially TotalCoinsSupply. There were white spaces and multiple decimal in a value. This required further datacleansing.
+A.	The datasets needed further cleansing specially TotalCoinsSupply. There were white spaces and multiple decimal in a value. This required further datacleansing. Exbibit A
 
 B.	6 features were converted to 98 feature as we used get dummies function for evaluation.
 
-C.	PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.we reduced 98 features to 3 main features.  
+C.	PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.we reduced 98 features to 3 main features.  See Exhibit A
 
 D.	pca.explanation_ratio_ was very low between the three variable i.e. PC 1, PC 2, PC 3.  Variance is the square distance from each point from the center, added together, and divided by the total number of points. This tells us that is that the first principal component contains 2.7%, the second 2.13% and the third 2.05% of the variance. Together, PC1, PC2, & PC3 contain 6.88% of the information which is very low and does not represent dataset well.  
 
-E.	Elbow curve showed us 4 cluster as a classification for developing the investment product.  However, Cluster#1 showed outlier dots.  Once you remove outliers.  I believe the results will improve and # number of cluster will be 3.
+E.	Elbow curve showed us 4 cluster as a classification for developing the investment product.  However, Cluster#1 showed outlier dots.  Once you remove outliers.  I believe the results will improve and # number of cluster will be 3. See Exhibit B
 
-F.	Build charts utilizing 2D hvplot and 3D plotly.express to analyze data show outliers in both class 1 and 2.  We need to remove outliers to get better clustering results. 
+F.	Build charts utilizing 2D hvplot and 3D plotly.express to analyze data show outliers in both class 1 and 2.  We need to remove outliers to get better clustering results. Exhibit C and D
 
 # Recommendations:
 
@@ -50,16 +50,33 @@ F.	Build charts utilizing 2D hvplot and 3D plotly.express to analyze data show o
 
 9)	Part of pre-processing the database, we also need to utilize StandardScaler to fit and transform dataset to features that are weight in an order for analysis 
 
-## B.	Reducing Data Dimension using Principal Component Analysis (PCA)
+# B.	Reducing Data Dimension using Principal Component Analysis (PCA)
 
 PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
 
-C.	Clustering Cryptocurrencies Using K-means
+## Exhibit A: Processed Data
+![alt text]( https://github.com/vsanand27/Cryptocurrencies_Unsupervised_Machine_Learning/blob/master/Images/processed_data.PNG) 
+
+# C.	Clustering Cryptocurrencies Using K-means
 
 First we need to create Elbow diagram to see what are the best number of cluster required.  As you can see from Elbow image below that curve starts to flatten out a four.  So we used 4 cluster to create KMeans analysis that segregates the datframe data-set into four clusters.
 
-# Elbow Image 
+## Exhibit B: Elbow Chart
+![alt text]( https://github.com/vsanand27/Cryptocurrencies_Unsupervised_Machine_Learning/blob/master/Images/Elbow_Chart.PNG) 
+
 
 Next assigned created KMeans cluster and created a dataframe that combines dataset from the original table, coin name and PC1, PC2 and PC3 with class field that categorizes datset into 4 cluster.
 
-D.	Visualization 
+# D.	Visualization 
+
+## Exhibit C: 3D Chart with Cluster
+![alt text]( https://github.com/vsanand27/Cryptocurrencies_Unsupervised_Machine_Learning/blob/master/Images/3d_scatter_cluster.PNG)
+
+## Exhibit D: 2D Chart with Clusters based on scaled data
+![alt text]( https://github.com/vsanand27/Cryptocurrencies_Unsupervised_Machine_Learning/blob/master/Images/2d_scatter_cluster.PNG)
+
+## Exhibit E: Hvplot Table
+![alt text]( https://github.com/vsanand27/Cryptocurrencies_Unsupervised_Machine_Learning/blob/master/Images/hp-plot%20table.PNG) 
+
+# End of file
+
