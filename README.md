@@ -15,9 +15,10 @@ B.	6 features were converted to 98 feature as we used get dummies function for e
 
 C.	PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.we reduced 98 features to 3 main features.  
 
-D.	pca.explanation_ratio_ was very low between the three variable i.e. PC 1, PC 2, PC 3.  Variance is the square distance from each point from the center, added together, and divided by the total number of points. This tells us that is that the first principal component contains 2.7%, second contains 2.13% and the third 2.05% of the variance. Together, they contain 6.88% of the information which is very low and does not represent dataset well.  
+D.	pca.explanation_ratio_ was very low between the three variable i.e. PC 1, PC 2, PC 3.  Variance is the square distance from each point from the center, added together, and divided by the total number of points. This tells us that is that the first principal component contains 2.7%, the second 2.13% and the third 2.05% of the variance. Together, PC1, PC2, & PC3 contain 6.88% of the information which is very low and does not represent dataset well.  
 
-E.	Elbow curve showed us 4 cluster as a classification for developing the investment product.  However, Cluster#1 showed outlier dots.   
+E.	Elbow curve showed us 4 cluster as a classification for developing the investment product.  However, Cluster#1 showed outlier dots.  Once you remove outliers.  I believe the results will improve and # number of cluster will be 3.
+
 F.	Build charts utilizing 2D hvplot and 3D plotly.express to analyze data show outliers in both class 1 and 2.  We need to remove outliers to get better clustering results. 
 
 # Recommendations:
