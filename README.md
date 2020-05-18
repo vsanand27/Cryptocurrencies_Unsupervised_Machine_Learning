@@ -5,7 +5,7 @@ Unveil data patterns and perform unsupervised machine learning models
 
 Utilize Unsupervised machine learning to determine cryptocurrencies trading on the market and how cryptocurrencies could be grouped toward creating a classification for developing this new investment product.
 
-Challenge File:
+Challenge File: https://github.com/vsanand27/Cryptocurrencies_Unsupervised_Machine_Learning/blob/master/CryptoCurrency_Challenge.ipynb
 
 # Key Takeaways
 
